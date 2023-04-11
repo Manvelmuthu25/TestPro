@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:background="@color/color_white"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_layoutedit"
+        android:layout_width="match_parent"
+        android:background="@drawable/near_bottom_light_blue_line"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/edit_menu_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/circle_thum"
+            android:gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/ic_plus" />
+
+
+        <TextView
+            android:id="@+id/edit_menu_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/edit_menu_img"
+            android:layout_toRightOf="@+id/edit_menu_img"
+            android:gravity="left|center"
+            android:textColor="@color/edit_txt_color"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:src="@drawable/ic_reorder"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

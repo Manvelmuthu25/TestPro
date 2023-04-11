@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/back_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/station_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:text="Select Date &amp; Time"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/date_edttrintime"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:clickable="true"
+            android:background="@drawable/ic_search_bg"
+            android:drawableLeft="@drawable/ic_date_range"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:hint="DD/MM/YYY"
+            android:inputType="number"
+            android:textSize="20sp" />
+
+        <EditText
+
+            android:id="@+id/time_edttrintime"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:background="@drawable/ic_search_bg"
+            android:drawableLeft="@drawable/ic_access_time"
+            android:drawablePadding="10dp"
+            android:focusable="false"
+            android:hint="HH:MM"
+            android:inputType="number"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/timing_recycler_view"
+                    android:layout_width="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/error_notetime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:text="@string/error_nottrintime"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="P1-Platform 1" />
+
+                    <LinearLayout
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="P2-Platform 2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="P3-Platform 3" />
+
+                    <LinearLayout
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/cardview_dark_background" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="16sp"
+                        android:text="P4-Platform 4" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:text="Note: All values given in hours" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

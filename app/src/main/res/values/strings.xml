@@ -1,0 +1,379 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">CMRL</string>
+    <!--demo BILL Desk SDK Key-->
+    <!-- <string name="bd_browser_key">b5a75079-b3ed-4f2c-9292-b0f3b829e1d2</string>-->
+
+
+    <!--live BILL Desk SDK Key-->
+    <string name="bd_browser_key">91ac18a2-9b59-4438-bc64-3000f110362a</string>
+    <!--old google map key
+    <string name="googlemap_apikey">AIzaSyCgegv3ZmCC-X4PaO3Cz17RlSzMlbhxi4Q</string>
+    <string name="googlemap_webkey">AIzaSyDN7RJFmImYAca96elyZlE5s_fhX-MMuhk</string>-->
+
+
+    <!--cmrl_app and chennaiMetro.appv1-->
+    <string name="googlemap_apikey">AIzaSyCNs8nDAMnDXG94MU7DFlmYWDlEO1H6ppc</string>
+
+
+    <string name="googlemap_webapikey">AIzaSyCz4RYbgIgW-VSBLCIFRHbo06Mk_pgKbVk</string>
+
+    <string name="header_align">Center</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+    <string name="notification_add_to_cart_button">Like</string>
+    <string name="group_name">Group 1</string>
+    <string name="notifications_admin_channel_name">Global channel</string>
+    <string name="notifications_admin_channel_description">Notifications sent from the app admin</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Home page text-->
+    <string name="menu_txt">Menu</string>
+    <string name="station_info">Station Info</string>
+    <string name="nearest_station">Nearest Metro Station</string>
+    <string name="contact">Contact</string>
+    <string name="edit_menu"> <b>+</b> Edit Menu</string>
+    <string name="add_menu">Add Menu</string>
+    <!--Drawer Menu list-->
+    <string name="chart">chart</string>
+    <string name="home">Home</string>
+    <string name="travel_planner">Travel Planner</string>
+    <string name="sta_info">Station Information</string>
+    <string name="traval_card">Travel Card Recharge</string>
+    <string name="traval_cabs1">Book a Cab</string>
+    <string name="traval_cabs">MTC/Auto/Cab Service</string>
+    <string name="traval_card_balance">Travel Card Balance</string>
+    <string name="setalertdestination">Set Destination Alert</string>
+    <string name="feeder_service">Feeder Service</string>
+    <string name="nearest_metro">Nearest Metro Station</string>
+    <string name="tour_guide">Tour Guide</string>
+    <string name="others">Other Info</string>
+    <string name="feedback">Feedback</string>
+    <string name="Sugarbox">SugarBox Entertainment</string>
+
+    <string name="showmore"><u>Show More</u></string>
+
+    <!--EditMenu-->
+    <string name="edit_str">You can set up to 4 shortcut menus and change the order of the menus</string>
+
+    <!--Station Information menus-->
+
+    <string name="station_details">Station Details</string>
+    <string name="train_timings">Train Timings</string>
+    <string name="platforms">Platforms</string>
+    <string name="gates_and_directions">Gates And Directions</string>
+    <string name="availability_of_parking">Availability Of Parking</string>
+    <string name="lost_and_found">Lost And Found</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="where_to_stay_and_dine">Where To Stay And Dine</string>
+
+    <!--Other Info-->
+
+    <string name="fare_products">Fare Products</string>
+    <string name="notifications">Notifications</string>
+    <string name="metro_net_information">Metro Network Information</string>
+    <string name="instruction_of_commuters">Instruction To Commuters</string>
+    <string name="facilites_for_disabled">Facilities For Disabled Persons</string>
+    <string name="helpline">Helpline</string>
+
+    <!--fare product-->
+
+    <string name="fare_text1">SJT (Single Journey Token)</string>
+    <string name="fare_text2">CSC (Contactless Smart Card)</string>
+    <string name="fare_text3">SVC (Stored Value Card) -10% discount in normal fare(Rs.50/-refundable deposit)</string>
+    <string name="fare_text4">Trip Card -20% discount in normal fare.</string>
+    <string name="fare_text5">10 trip for 30 days</string>
+    <string name="fare_text6">30 trip for 90 days</string>
+    <string name="fare_text7">60 trip for 180  days</string>
+    <string name="fare_text8">P-CSC(paper Contactless Smart Card)</string>
+    <string name="fare_text9">Tourist card [1 day -Rs.150/-]</string>
+
+    <string name="fare_text11">Combo Card -Supplied from SBI (ie.ATM cum Debit card).</string>
+
+    <!--Instruction to Cummutors-->
+    <string name="instrc_do_s_1">Please stand in the queue.</string>
+    <string name="instrc_do_s_2">Limit your baggage to 15 kgs and size of baggage should not exceed: 60 cm length x 45cm breadth x 25 cm height.</string>
+    <string name="instrc_do_s_3">Please use the dustbins.</string>
+    <string name="instrc_do_s_4">Please stand on the left side of the escalator.</string>
+    <string name="instrc_do_s_5">Please move away from the escalators immediately after use.</string>
+    <string name="instrc_do_s_6">Please remember that the train stops for 30 seconds only.</string>
+    <string name="instrc_do_s_7">Show your tickets to metro personnel, when asked to.</string>
+    <string name="instrc_do_s_8">Consider the comfort of your fellow passengers.</string>
+    <string name="instrc_do_s_9">Abstain from drunken and unruly behavior.</string>
+    <string name="instrc_do_s_10">Take care of your belongings.</string>
+    <string name="instrc_do_s_11">Please contact station controller or customer care for assistance.</string>
+    <string name="instrc_do_s_12">Please offer your seat to children, pregnant women and elderly passengers.</string>
+    <string name="instrc_do_s_13">Please give preference to differently abled, pregnant women and senior citizens when taking the lift.</string>
+    <string name="instrc_do_s_14">PARK  AT YOUR OWN RISK.</string>
+
+
+    <string name="instrc_don_s_1">Don’t travel without your smartcard or token.</string>
+    <string name="instrc_don_s_2">Don’t share your card or token with another person on the same journey.</string>
+    <string name="instrc_don_s_3">Don’t jump over the ticket barrier.</string>
+    <string name="instrc_don_s_4">Don’t cross the yellow line on the platform.</string>
+    <string name="instrc_don_s_5">Don’t step onto the metro tracks.</string>
+    <string name="instrc_don_s_6">Don’t try to force the train doors open.</string>
+    <string name="instrc_don_s_7">Don’t stick posters or indulge in graffiti inside the train or metro station.</string>
+    <string name="instrc_don_s_8">Don’t step on the tactile meant for the visually challenged.</string>
+    <string name="instrc_don_s_9">Don’t take the lift it is meant for the physically challenged and aged.</string>
+    <string name="instrc_don_s_10">Don’t carry firearms or knives.</string>
+    <string name="instrc_don_s_11">Don’t bring pets inside the metro station premises or trains.</string>
+    <string name="instrc_don_s_12">Don’t smoke.</string>
+    <string name="instrc_don_s_13">Don’t eat or drink in the trains or metro station premises.</string>
+
+    <!--Facilities for disabled persons-->
+
+    <string name="facilities">All stations are designed with disabled-friendly facilities like escalators, lifts, Toilets,ramped and tactile\n\nTactile tiles are provided at all stations to enable the visually impaired to travel from the entrance to the platform  without assistance.\n\nAdaptation of toilets for wheelchair users, Braille symbols and auditory signals in elevators, and warning signals appropriate places are other disabled-friendly features available stations.\n\nFor hearing impaired commuters, directional and information signage is provided at the stations. Dynamic display giving travel information is provided in stations.\n\nAudio announcements giving travel and general information for visually challenged people.\n\nAudio frequency induction Loop System giving travel and general information for  hearing impaired people.\n\nPassenger emergency telephone in platform and lift intercom phone to contact CMRL staffs in case of emergency.\n\nWide automatic gates are provided for wheelchair users.\n\nDisable friendly Ticket Vending Machine with Help button for operator assistance, Audio announcements along with Audio frequency induction loop system and braille symbols.
+    </string>
+
+    <!--Menu Us</a>-->
+    <string name="call_us"><a href="tel:+186-04251515">186-04251515</a></string>
+    <string name="email_us"><a href="mailto:chennaimetrorail@cmrl.in">chennaimetrorail@cmrl.in</a></string>
+    <string name="address">Admin Building CMRL Depot,\nPoonamallee High Road,\nKoyambedu,\nChennai-600107,\nTamil Nadu, India</string>
+
+    <!--lost and found-->
+    <string name="lost_txt_1">A separate Lost and Found office is setup at Alandur metro station at the below for proper storage of lost and found articles disposal and keeping records.</string>
+    <string name="alandur_station">Alandur Station</string>
+    <string name="contact_num_txt">Contact Number</string>
+    <string name="contact_num"><a href="tel:+044-23792220">044-23792220</a></string>
+    <string name="customer_care_txt">Customer care Number</string>
+    <string name="customer_care_num"><a href="tel:+1860-425-155">1860-425-155</a></string>
+    <string name="alandur_addres_title">Alandur metro station</string>
+    <string name="alandur_addres">Trichy - Chennai Highway,\nAlandur, Chennai,\nTamil Nadu - 600016</string>
+    <string name="instruction_commuters">Instruction to Commuters</string>
+    <string name="inst_txt1">The passengers who lost their articles anywhere in chennai metro rail premises or trains, should approach customer care of the given station within 24 hours.</string>
+    <string name="inst_txt2">After 24 hours passengers may collect their lost articles at alandur metro station lost and found office between 10 P.M to 5 P.M all days except sundays</string>
+    <string name="inst_txt3">The Lost articles will be handed over to the Claimant/Passengers only after proper verification of his/her valid ID proof</string>
+    <string name="inst_txt4">Passenger/Claimant may also check their lost articles on CMRL Website : <a href="http://chennaimetrorail.org/">www.chennaimetrorail.org</a></string>
+    <string name="inst_txt5">If the lost articles are not claimed within one month, the deposited lost articles at Lost and found office will be disposed off.</string>
+    <!--TourGuid-->
+    <string name="tour_spots_details">Tour Spots &amp; Details</string>
+    <string name="cultural_centres">Cultural Centres</string>
+    <string name="local_weather_forecasts">Local Weather Forecasts</string>
+
+    <!--parking-->
+    <string name="rs">Price(\u20B9)</string>
+
+    <!-- Feeder_Service-->
+    <string name="S51">S51</string>
+    <string name="j_j_nagar_west">J.J.Nagar(West)</string>
+    <string name="koyambedu_market">Koyambedu Market</string>
+    <string name="s_31">S31</string>
+    <string name="vadapalani">Vadapalani</string>
+    <string name="s_20">S20</string>
+    <string name="s_87">S87</string>
+    <string name="s_86">S86</string>
+    <string name="s_26">S26</string>
+    <string name="s_82">S82</string>
+    <string name="s_85">S85</string>
+    <string name="s_11">S11</string>
+    <string name="s_12">S12</string>
+    <string name="s_13">S13</string>
+    <string name="s_32">S32</string>
+    <string name="s_33">S33</string>
+    <string name="Koyambedu">Koyambedu</string>
+    <string name="ramapuram">Ramapuram</string>
+    <string name="ramapuram1">Ashok Nagar</string>
+    <string name="ashok_Pillar">Ashok Pillar</string>
+    <string name="cMBT_Metro_R_S">CMBT.Metro R.S</string>
+    <string name="t_Nagar">T.Nagar</string>
+    <string name="nezapakkam">Nezapakkam</string>
+    <string name="valasaravakkam">Valasaravakkam</string>
+    <string name="alandur_Metro_R_s">Alandur Metro R.S</string>
+    <string name="alandur">Alandur</string>
+    <string name="madipakkam_B_S">Madipakkam B.S</string>
+    <string name="velacherry">Velacherry</string>
+    <string name="guindy_Asargana">Guindy Asargana</string>
+    <string name="guindy">Guindy R.S</string>
+    <string name="keelkattalai">keelkattalai</string>
+    <string name="guindy_Race_Course">Guindy Race Course</string>
+    <string name="koyambedu_Bus_Stand">Koyambedu Bus Stand</string>
+    <string name="c_M_B_T">C.M.B.T</string>
+    <string name="mahalingapuram">Mahalingapuram</string>
+    <string name="via">Via</string>
+    <string name="Total_No_of_Service">Total No.of Service</string>
+    <string name="Stations_Connecting_CMRL">Stations Connecting CMRL</string>
+    <string name="vijaya_bank">Vijaya bank,j.j.Nagar East,\nCollec tor Nagar,Padi kuppam,rail Nagar \nKoyambedu Metro R.station.</string>
+    <string name="Vadapalani">Virugambakkam,Sridevi kuppam,Kamaraj Salai,\nErikarai,Lakshmiapartment,\nChinmaya nagar.</string>
+    <string name="Ramapuram">Ramapuram,Thiruvalluvar Salai,Amman Nagar,\nNesapakkam,Anna Salai,\nAjantha,MGR Nagar Market,\nK.K.Nagar B.S.</string>
+    <string name="CMBT_Metro_R_S">Anna main Road,K.K.Nagar B.S,MGR Nagar Market,\nNezapakkam,Vembuli Amman \Koil st,Koyambedu School.</string>
+    <string name="T_Nagar">Madle road,Ellaiamman \nKoil st,Ahok Pillar,\nBharthidhasan Colony Choolai pallam,MGR statue.</string>
+    <string name="Ashok_Pillar">Jafferkam Pettai(Weest)\n,M.G.R.Nagar,Ramapuram,\nAalamaram</string>
+    <string name="Alandur_metro_R_S1">St.Thomas Mount.Lake \nview Road,Adampakkam \nPolice Station,Brindavan Nagar,Chidambaram st,\nUilagaram,N.S.C.Bose Road,\nPonniamman Koil.</string>
+    <string name="Alandur_metro_R_S2">Alandur Count,Thiliganaga nagar,Anjaneyar koil.\nVanuvampattai,Medavakkam Main Road,Balammal Main Road, Balaji Nagar Main Road,Ring Road,\nVelachery R.S.,Velachery B.S.</string>
+    <string name="Guindy_Asargana">-</string>
+
+
+    <!-- Tour_Spots & Details
+  -->
+    <string name="marina_Beach">Marina Beach</string>
+    <string name="edward_elliots_beach">Edward Elliots Beach</string>
+    <string name="for_st_george">Fort St. George </string>
+    <string name="Vivekanandar_illam">Vivekanandar Illam</string>
+    <string name="spencer_plaza">Spencer Plaza</string>
+    <string name="arignar_anna_zoological_park">Arignar Anna Zoological Park</string>
+    <string name="parthasarathy_temple">Parthasarathy Temple</string>
+    <string name="ripon_building">Ripon Building</string>
+    <string name="Marina_Beach">Marina Beach is a natural urban beach in the city of Chennai,India along the Bay of Bengal.</string>
+    <string name="Edward_Elliots_Beach">Elliots Beach is located in Besant Nagar, Chennai, India. It forms the end-point of the Marina Beach shore.</string>
+    <string name="Fort_St_George">Fort St George is the name of the first English fortress in India, founded in 1644 at the coastal city of Madras.</string>
+    <string name="vivekanandar_Illam">Vivekanandar Illam is a Structure at Chennai,India,used by the British to Store the ice brought from Great Lakes in North America for about 30 years.</string>
+    <string name="Spencer_Plaza">Spencer Plaza was built in 1864,established by Charles Durant and J.W Spencer in Anna Salai,then Known as Mount Road,in the Madras Presidency.</string>
+    <string name="Arignar_Anna_Zoological_Park">Arignar Anna Zoological Park, also known as the Vandalur Zoo, is a zoological garden located in Vandalur, a suburb in the southwestern part of Chennai, Tamil Nadu.</string>
+    <string name="Parthasarathy_Temple">The Parthasarathy Temple is an 8th century Hindu Vaishnavite temple dedicated to the god Krishna,located at Triplicane,Chennai,India.</string>
+    <string name="Ripon_Building">The Ripon Building is the seat of the Chennai Corporation in Chennai, Tamil Nadu. It is a fine example of the Neoclassical style of architecture, a combination of, Ionic and Corinthian.</string>
+    <!-- cultural_centre
+      -->
+    <string name="vivekanada_cultural_centre">Vivekananda Cultural Centre</string>
+    <string name="inko_centre">Inko Centre</string>
+    <string name="russian_center_of_Science_and_Culture">Russian Center of Science and Culture</string>
+    <string name="nandalala_Cultural_Centre">Nandalala Cultural Centre</string>
+    <string name="alliance_Francaise_of_Madaras">Alliance Française of Madras</string>
+    <string name="Vivekanada_cultural_centre">Vivekanada House an important landmark in Chennai is associated with the Sri Ramakrishna Math since 1897 when Swami Vivekananda stayed here for nine days after his triumphant return from the West.</string>
+    <string name="Inko_centre">Inko Centre aims to promote an inter-cultural dialogue by facilitating a consistent programme that draws on the rich traditions of both India and Korea.</string>
+    <string name="Russian_center_of_Science_and_Culture">The Consulate General of the Russian Federation in Chennai represents the interests of the Russian government in the southern region of India.</string>
+
+    <string name="Nandalala_Cultural_Centre">The Nandalala Seva Samithi Trust was founded by Pujyasri Mathioli Saraswathy in the Year 1988.</string>
+    <string name="Alliance_Francaise_of_Madaras">Alliance Française of Madras is a Franco-Indian non-profit association in Chennai, India,with mission to teach the French language to the people in the region.</string>
+
+    <!--availability of parking-->
+    <string name="cars_">Cars</string>
+    <string name="bikes_">Bikes</string>
+    <string name="hybrid_bicycles">Hybrid/\nBycycles</string>
+    <string name="availablit_note">*Total available parking space | Note: Night Charges Extra</string>
+
+    <string name="enable_emv">Enable EMV Card</string>
+    <string name="disabled_emv">Disable EMV Card</string>
+    <string name="enable_transit">Enable Transit Card</string>
+    <string name="disable_transit">Disable Transit Card</string>
+
+
+    <!-- platforms-->
+    <string name="level"> <u>Level</u></string>
+
+    <string name="gate_a">GATE A</string>
+    <string name="gate_b">GATE B</string>
+    <string name="gate_c">GATE C</string>
+    <string name="gate_d">GATE D</string>
+    <!--TrainTiming page-->
+
+    <string name="error_nottrintime">Sorry!!! We could not find any upcoming trains near your location at the moment. Please Check back later.</string>
+
+
+    <string name="chathead_content_title">Demo Chat: Active</string>
+    <string name="content_text">Demo running.</string>
+    <string name="mail_content_title">Demo Customize: active</string>
+    <string name="chathead_click_message">Click</string>
+    <string name="delete_demo">Delete Demo</string>
+    <string name="show_demo">Show Simple FloatingView</string>
+    <string name="show_customized_demo">Show Customized FloatingView</string>
+    <string name="show_settings">Initial Settings</string>
+    <string name="permission_denied">Overlay permission not granted.</string>
+    <string name="mail_address">example@example.com</string>
+    <string name="mail_title">Title</string>
+    <string name="mail_content">Message</string>
+    <string name="touch_finished_position" formatted="false">Current position (%d,%d)</string>
+    <string name="deleted_soon">FloatingView will be deleted soon.</string>
+    <string name="finish_deleted">FloatingView has been deleted.</string>
+    <string name="default_floatingview_channel_id">default_floatingview_channel</string>
+    <string name="default_floatingview_channel_name">Default Channel
+
+
+
+
+    </string>
+
+
+    <string name="create_floating_widget">Create Floating Widget</string>
+    <string name="floating_widget_label">Floating Widget Label</string>
+    <string name="floating_widget_details">Floating Widget Details</string>
+    <string name="draw_other_app_permission_denied">Draw over other app permission not available. App won\'t work without permission. Please try again.</string>
+
+
+    <!--Set Destination Alert -->
+
+    <string name="sit_back_enjoy_your_ride">Sit back enjoy your ride!</string>
+    <string name="While_we_notify_your_destionation_in_advance">While we notify your destination in advance.</string>
+    <string name="You_will_be_geting_an_alert_before_your_destination">You will be getting an alert before your destination.</string>
+    <string name="Wifi_should_be_ON_to_enable_this_alert">Wifi should be ON to enable this alert.</string>
+    <string name="Change_Destination"><u>Cancel</u></string>
+
+
+    <string name="You_Destination_Station_is_set_to">You Destination Station is set to</string>
+
+
+    <string name="action_hide">Hide Panel</string>
+    <string name="action_show">Show Panel</string>
+    <string name="action_anchor_enable">Enable Anchor Point</string>
+    <string name="action_anchor_disable">Disable Anchor Point</string>-<string name="hello">
+<![CDATA[<b>The Awesome Sliding Up Panel</b><br/> Brought to you by<br/><a href="http://umanoapp.com">http://umanoapp.com</a>]]>
+</string>-
+    <string name="follow">
+<![CDATA[Follow us<br/>on <a href="http://twitter.com/umanoapp">Twitter</a>]]>
+</string>
+
+    <string name="agree_t_and_c">I agree with the <a href="http://chennaimetrorail.org/cmrl-apps-terms"> terms and conditions </a></string>
+    <string name="t_and_c"><a href="http://chennaimetrorail.org/cmrl-apps-terms/"><u>Terms and Conditions</u></a></string>
+
+
+    <string name="let_usknow">Let us know what you <b>think</b></string>
+
+
+    <string name="expircard">Your card is no longer an active store value card.</string>
+
+
+    <!--Toast String-->
+    <string name="editment_limt">You can set up to 4 shortcut menus only</string>
+    <string name="press_back">Press back again to exit</string>
+    <string name="chekc_inconnection">Check your network connection.</string>
+    <string name="this_internet">This function requires internet connection.</string>
+    <string name="this_gps">Please turn on the location to book a cab.</string>
+    <string name="somthinnot_right">Password must be strong</string>
+    <string name="fromto_same">From and To station cannot be the same.</string>
+    <string name="we_cannot_find">We cannot find any direct train at the specified time between the stations you have selected. Please try a different time/station.</string>
+    <string name="we_cannot_train">We cannot find any train at the specified time between the stations you have selected. Please try a different time/station.</string>
+    <string name="no_feeder">No feeder service currently available for this station.</string>
+    <string name="selectstation">Select station to view the feeder service</string>
+
+
+    <!--NFC Card-->
+
+    <string name="Back"><u>Back</u></string>
+    <string name="nfc_reater">Place your travel card near NFC Tag</string>
+    <string name="date_time">Date &amp; Time</string>
+    <string name="type">Type</string>
+    <string name="station">Station</string>
+    <string name="amount">Recharges Amt,</string>
+
+
+    <string name="amt">Amount</string>
+    <string name="trips">Trips</string>
+
+    <string name="amtbalance">Your Current Balance</string>
+    <string name="tripbalance">Your Remaining Trips</string>
+
+
+    <string name="permission_settings_button">Settings</string>
+    <string name="permission_rational_message">We need permission to fetch locations.</string>
+    <string name="permission_success_message">Thank you for granting the required permissions.</string>
+    <string name="permission_denied_message">Required Permissions denied. Please give permission in App Settings.</string>
+    <string name="permission_request_denied_message" formatted="false">You have denied permissions with \'Never ask again\' option.Please grant permissions in \nSettings -> Apps ->%s ->Permissions.</string>
+
+    <string name="allow">Allow</string>
+    <string name="deny">Deny</string>
+    <string name="location_write_external_storage">LOCATION &amp; WRITE EXTERNAL STORAGE REQUIRED</string>
+    <string name="Aarogya">Download  &amp; install the Aarogya seth App to continve with your ticket booking </string>
+    <string name="download">CLICK HERE TO OPEN NOW</string>
+
+
+    <string name="sugarbox1">Watch the latest movies,TV shows,
+Originals,Music and much more on the SugarBox app while travelling in
+        Chennai Metro
+              </string>
+    <string name="sugarbox2">   You can stream and download everything, from the
+best Tamil movies to the latest shows across various genres without using your mobile data.
+              </string>
+
+</resources>

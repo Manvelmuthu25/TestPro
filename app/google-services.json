@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "584635564431",
+    "firebase_url": "https://chennai-metro-rail-limited.firebaseio.com",
+    "project_id": "chennai-metro-rail-limited",
+    "storage_bucket": "chennai-metro-rail-limited.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:584635564431:android:a42459e910311cab",
+        "android_client_info": {
+          "package_name": "org.chennaimetrorail.appv1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "584635564431-kcrb1r3e90aiqnmqfru9o7ladto4a37q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLm8W15B9qpamQzDX9yZTrohm01ormVUg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

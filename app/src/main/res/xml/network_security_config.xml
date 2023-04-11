@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+<!--        https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted-->
+        <!--java.net.UnknownServiceException: CLEARTEXT communication to itechdemo.in not permitted by network security policy-->
+       <!-- <domain includeSubdomains="true"> https://apidev.chennaimetrorail.org</domain>-->
+       <!-- <domain includeSubdomains="true">http://itechdemo.in/cmrlservice</domain>
+        <domain includeSubdomains="true">https://tapi.chennaimetrorail.org</domain>-->
+
+        <domain includeSubdomains="true">https://apidev2.chennaimetrorail.org/v2/</domain>
+        <domain includeSubdomains="true">  https://apiprod.chennaimetrorail.org/v2/</domain>
+-->
+    </domain-config>
+</network-security-config>
+
+
+
+

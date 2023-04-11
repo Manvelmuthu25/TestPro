@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <include
+        layout="@layout/back_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:background="@drawable/feedback_bg"
+                android:text="@string/let_usknow"/>
+
+            <EditText
+                android:id="@+id/fb_username"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="5dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_curvline"
+                android:hint="Name*" />
+
+            <EditText
+                android:id="@+id/fb_email"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_curvline"
+                android:hint="E-mail*" />
+
+            <EditText
+                android:id="@+id/fb_ph_number"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:textSize="18sp"
+                android:maxLength="10"
+
+                android:inputType="phone" 
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/border_curvline"
+                android:hint="Phone number*" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Experience in train"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:isIndicator="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/fb_station_name"
+                    style="@android:style/Widget.Holo.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/gradient_spinner"
+                    android:spinnerMode="dialog"
+                    android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+                </android.support.v7.widget.AppCompatSpinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bottom_line_gray"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upkeep of station"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:isIndicator="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bottom_line_gray"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rest room facilities"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:isIndicator="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bottom_line_gray"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Security services"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:isIndicator="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bottom_line_gray"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Ticketing experience"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:isIndicator="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bottom_line_gray"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parking facilities"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:isIndicator="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bottom_line_gray"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Staff friendliness"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:isIndicator="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/bottom_line_gray"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Facilities at station"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:numStars="5"
+                    
+                    android:isIndicator="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Safety"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:isIndicator="false" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/fb_msgbox"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:paddingLeft="5dp"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:maxLength="1000"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_curvline"
+                android:gravity="top"
+                android:hint="Comments"
+                android:inputType="text|textMultiLine" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Experience in CMRL"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"/>
+                <RatingBar
+                    android:id="@+id/rateing_txt10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:progressDrawable="@drawable/feedback_rating"
+                    android:numStars="5"
+                    android:stepSize="1"
+                    android:isIndicator="false" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:id="@+id/fb_submit"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_button"
+                android:text="Submit"
+                android:layout_marginBottom="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

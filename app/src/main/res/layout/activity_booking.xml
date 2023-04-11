@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/t_card_bg">
+
+    <include
+        android:id="@+id/logout_menu"
+        layout="@layout/travelcard_menu_cab_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/aarogya_app_view"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/privacy_policy1"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:layout_weight="1"
+            android:src="@drawable/logosetu" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="230dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/Aarogya_setuid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/ticket_bg_btton_blue"
+                android:gravity="center"
+                android:text="@string/download"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+
+                   </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="300dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/footerimg1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_gravity="center"
+               android:scaleType="fitXY"
+                android:src="@drawable/aarogya_setu1" />
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ticketsrootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+
+        <org.chennaimetrorail.appv1.travelcab.MTWebview xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ticketwebview12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

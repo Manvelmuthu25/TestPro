@@ -1,0 +1,421 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_above="@+id/laydd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/back_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/platform_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+        <LinearLayout
+            android:id="@+id/custome_spinnerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/spinner_bg"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/spinimg"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:padding="5dp"
+                android:layout_weight="0"/>
+
+            <TextView
+                android:id="@+id/spintxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:padding="16dp"
+                android:src="@drawable/ic_arrowdwn"
+                android:layout_weight="0"/>
+
+        </LinearLayout>
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp">
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/spinner_bg1"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/spinner_bg2"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight=".9"
+                        android:gravity="center"
+                        android:text="Parking Area"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Total Slots"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Available Slots"
+                        android:textColor="@color/color_white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/parkingtarrif_recyle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+
+        <!--
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight=".5"
+                            android:gravity="center"
+                            android:text="Gate NO"
+                            android:textColor="@color/color_white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Total Slote"
+                            android:textColor="@color/color_white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Available Slote"
+                            android:textColor="@color/color_white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/parkingtarrif_recyle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+
+
+
+                    &lt;!&ndash; <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:background="@color/white"
+                         android:gravity="center">
+                         <LinearLayout
+                             android:layout_width="175dp"
+                             android:layout_marginLeft="10dp"
+                             android:layout_height="175dp"
+                             android:gravity="center"
+                             android:background="@drawable/ic_cmrl_ava"
+                             android:orientation="horizontal"
+                             android:padding="5dp">
+
+                             <LinearLayout
+                                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"
+                                 android:layout_weight=".9"
+                                 android:layout_marginRight="25dp"
+                                 android:gravity="center"
+                                 android:orientation="vertical">
+
+                                 <TextView
+                                     android:layout_width="match_parent"
+                                     android:layout_height="50dp"
+                                     android:layout_weight="1"
+                                     android:gravity="bottom|center"
+                                     android:text="Total"
+                                     android:fontFamily="@font/fontstyle"
+                                     android:layout_marginRight="10dp"
+                                     android:textColor="@color/white"
+                                     android:textSize="16dp"
+                                     android:textStyle="bold" />
+
+                                 <TextView
+                                     android:layout_width="match_parent"
+                                     android:layout_height="20dp"
+                                     android:layout_weight="1"
+                                     android:gravity="left"
+                                     android:layout_marginLeft="5dp"
+                                     android:layout_marginBottom="25dp"
+                                     android:textColor="@color/white"
+                                     android:fontFamily="@font/fontstyle"
+                                     android:text="Slots "
+                                     android:textStyle="bold"
+                                     android:textSize="22sp" />
+
+
+                             </LinearLayout>
+
+
+                             <RelativeLayout
+                                 android:layout_width="wrap_content"
+                                 android:layout_centerHorizontal="true"
+                                 android:layout_marginRight="10dp"
+                                 android:layout_height="wrap_content">
+
+                                 <ProgressBar
+                                     android:id="@+id/total_Slot_ProgressBar"
+                                     style="?android:attr/progressBarStyleHorizontal"
+                                     android:layout_width="55dp"
+                                     android:layout_height="60dp"
+                                     android:indeterminate="false"
+                                     android:max="100"
+                                     android:progress="0"
+                                     android:progressDrawable="@drawable/custom_progressbar_drawable1"
+                                     android:secondaryProgress="0" />
+
+                                 <TextView
+                                     android:id="@+id/total_Slot"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_alignBottom="@+id/progressBar"
+                                     android:layout_centerInParent="true"
+                                     android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+                             </RelativeLayout>
+                         </LinearLayout>
+
+
+                         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:layout_width="175dp"
+                             android:layout_height="175dp"
+                             android:background="@drawable/ic_cmrl_ava"
+                             android:gravity="center"
+                             android:layout_marginRight="10dp"
+                             android:orientation="horizontal"
+                             android:padding="5dp">
+
+                             <LinearLayout
+                                 android:layout_width="150dp"
+                                 android:layout_height="match_parent"
+                                 android:layout_marginRight="12dp"
+                                 android:layout_weight=".90"
+                                 android:gravity="center"
+                                 android:orientation="vertical">
+
+                                 <TextView
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="1"
+                                     android:gravity="bottom|left"
+                                     android:text="Available"
+                                     android:fontFamily="@font/fontstyle"
+                                     android:layout_marginLeft="8dp"
+                                     android:textColor="@color/white"
+                                     android:textSize="16dp"
+                                     android:textStyle="bold" />
+
+                                 <TextView
+                                     android:layout_width="match_parent"
+                                     android:layout_height="match_parent"
+                                     android:layout_weight="1"
+                                     android:gravity="left"
+                                     android:fontFamily="@font/fontstyle"
+                                     android:textColor="@color/white"
+                                     android:text="Slots "
+                                     android:layout_marginLeft="5dp"
+                                     android:textStyle="bold"
+                                     android:textSize="22sp" />
+
+
+                             </LinearLayout>
+
+
+                             <RelativeLayout
+                                 android:layout_width="wrap_content"
+                                 android:layout_centerHorizontal="true"
+                                 android:layout_marginRight="5dp"
+                                 android:layout_height="wrap_content">
+
+
+                                 <ProgressBar
+                                     android:id="@+id/available_slots_ProgressBar"
+                                     style="?android:attr/progressBarStyleHorizontal"
+                                     android:layout_width="55dp"
+                                     android:layout_height="60dp"
+                                     android:layout_centerInParent="true"
+                                     android:indeterminate="false"
+                                     android:max="100"
+                                     android:progress="0"
+                                     android:progressDrawable="@drawable/custom_progressbar_drawable"
+                                     android:secondaryProgress="0" />
+
+                                 <TextView
+                                     android:id="@+id/available_slots"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:layout_alignBottom="@+id/progressBar"
+                                     android:layout_centerInParent="true"
+                                     android:textAppearance="?android:attr/textAppearanceSmall" />
+                             </RelativeLayout>
+                         </LinearLayout>
+                     </LinearLayout>&ndash;&gt;
+                </RelativeLayout>
+        -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_bg1"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/parkingtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:text="Parking Time"
+                    android:textColor="@color/color_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+
+                <TextView
+                    android:id="@+id/price_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/rs"
+                    android:textColor="@color/color_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/parkingtarrif_recyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

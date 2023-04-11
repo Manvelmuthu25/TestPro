@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include
+        android:id="@+id/bck"
+        layout="@layout/back_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/myZoomageViewpop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_no_image"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_autoCenter="true"
+        android:layout_below="@+id/bck"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:zoomage_autoResetMode="UNDER"
+        app:zoomage_maxScale="8"
+        app:zoomage_minScale="0.6"
+        android:layout_above="@+id/gallery"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_translatable="true"
+        app:zoomage_zoomable="true" />
+
+
+    <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

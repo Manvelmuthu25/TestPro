@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/back_user_register"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_chevron_left"
+        android:gravity="center|left"
+        android:text="User Registration"
+        android:textColor="@color/color_black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <EditText
+                android:id="@+id/name_edt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/ic_name"
+                android:drawablePadding="10dp"
+                android:hint="Name*"
+                android:inputType="text"
+                android:textSize="16sp" />
+
+
+            <EditText
+
+                android:id="@+id/dob_edt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:clickable="true"
+                android:drawableLeft="@drawable/ic_dob"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="Date of birth*"
+                android:inputType="number"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="-5dp"
+                    android:padding="8dp"
+                    android:src="@drawable/ic_gender" />
+
+                <RadioGroup
+                    android:id="@+id/gender_selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Male" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Female" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Transgender" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/phone_edt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="10dp"
+                android:hint="Mobile number*"
+                android:maxLength="10"
+                android:inputType="phone"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/email_edt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/ic_emails"
+                android:drawablePadding="10dp"
+                android:hint="Email*"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/password_edt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="10dp"
+                android:hint="Password*"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:maxLength="25"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/confirm_password_edt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:drawableLeft="@drawable/ic_confirm_mpin"
+                android:drawablePadding="10dp"
+                android:hint="Confirm password*"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:maxLength="25"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/termsC_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/termsandc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/agree_t_and_c"
+                    android:autoLink="web"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center|left"
+                    android:linksClickable="true"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reg_submit_btn"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/circle_bg_btton_blue"
+                android:text="Submit"
+                android:layout_marginBottom="20dp"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

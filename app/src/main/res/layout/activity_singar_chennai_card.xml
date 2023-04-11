@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/aarogya_app_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="220dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!--  <TextView
+
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginLeft="10dp"
+                      android:layout_marginTop="10dp"
+                      android:gravity="center"
+                      android:text="SUGAR BOX"
+                      android:textColor="#2e3690"
+                      android:textSize="26sp" />-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text=" Singara Chennai (NCMC) Card"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Dear user, in order to manage your Singara Chennai Card, we will now redirect ypu to the Singara Chennai Card Website. Please click on the below button to open the Singara Chennai Website."
+                    android:textSize="18sp" />
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="450dp"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/back"
+                        android:layout_width="350dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/circle_bg_btton_blue"
+                        android:text="BACK"
+                        android:textSize="14sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_white" />
+
+                    <Button
+                        android:id="@+id/chennai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/circle_bg_btton_blue"
+                        android:text="CLICK HERE TO OPEN"
+                        android:textAllCaps="false"
+                        android:textSize="12sp"
+                        android:textColor="@color/color_white" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

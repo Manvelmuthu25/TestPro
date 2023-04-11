@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:id="@+id/station_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/station_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/ic_trainblue" />
+
+
+        <TextView
+            android:id="@+id/station_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/station_img"
+            android:layout_toRightOf="@+id/station_img"
+            android:gravity="left|center"
+            android:text="Stationlist"
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

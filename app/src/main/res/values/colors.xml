@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4270C5</color>
+    <color name="colorPrimaryDark">#4065ad</color>
+    <color name="colorAccent">#4871c1</color>
+
+<!--NFC Color-->
+    <color name="nfc_color">#4972C1</color>
+    <color name="curent">#494040</color>
+    <color name="number">#BCBCBC</color>
+    <color name="monthyear_clr">#B9B9B9</color>
+    <color name="transparent">#16000000</color>
+
+
+    <!--Rout info colors-->
+    <color name="ri_txtcolor">#38486C</color>
+
+    <color name="sucess">#FF73A757</color>
+    <color name="failed">#FFD14646</color>
+    <color name="marquee_bg">#b34270C5</color>
+    <color name="toolbar_txt_color">#456fc1</color>
+    <color name="edit_ment_txt">#1a4496</color>
+    <color name="edit_txt_color">#85857F</color>
+    <color name="t_card_bg">#FAFAFA</color>
+    <color name="color_gray">#666666</color>
+    <!--Home page colors-->
+    <color name="app_bg">#D6D6D6</color>
+    <color name="dotted_color">#85857F</color>
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_green">#136449</color>
+    <color name="colorPrimaryLight">#bfc6d6</color>
+    <color name="colorprimarylightdark">#cc1a4496</color>
+
+    <color name="menu_txtcolor">#282828</color>
+    <color name="color_transprant">#00000000</color>
+
+    <!--tool bar color-->
+    <color name="tollbar_bg">#dee5f5</color>
+    <!--train_timing_colors-->
+    <color name="color_bag_1">#EF3F2C</color>
+    <color name="color_bag_2">#33445E</color>
+    <color name="color_bag_3">#136449</color>
+    <color name="color_bag_4">#D87C2C</color>
+    <color name="color_bag_5">#8E3146</color>
+    <color name="color_bag_6">#713282</color>
+
+    <color name="color_bg_li_1">#F2724B</color>
+    <color name="color_bg_li_2">#576A88</color>
+    <color name="color_bg_li_3">#299D76</color>
+    <color name="color_bg_li_4">#F0A15C</color>
+    <color name="color_bg_li_5">#E34172</color>
+    <color name="color_bg_li_6">#713282</color>
+
+
+    <color name="color_1">#cd3c96</color>
+    <color name="color_2">#1897D4</color>
+    <color name="color_3">#A7475E</color>
+    <color name="color_4">#A59836</color>
+    <color name="color_5">#07B077</color>
+    <color name="color_6">#F15D4A</color>
+    <color name="color_7">#00B2BC</color>
+    <color name="color_8">#F1779D</color>
+    <color name="color_9">#6C97A6</color>
+    <color name="color_10">#9CB697</color>
+
+    <!--Parking Avalibility colors-->
+    <color name="av_note_colour">#0D3C49</color>
+    <color name="av_un_select_btn_clr">#E6E7E7</color>
+    <color name="av_select_btn_clr">#D0D0D2</color>
+    <color name="av_texy_clr">#2F3C6D</color>
+    <color name="line_clr">#D0D0D2</color>
+
+    <!--Rootview-->
+    <color name="rout_txt_clr">#39486D</color>
+
+
+
+
+    <!-- BRAND -->
+    <color name="brand_red">#d51826</color>
+    <color name="brand_main">#21a5b8</color>
+    <color name="brand_main_1">#1f8b9b</color>
+    <color name="brand_main_2">#15606c</color>
+    <color name="brand_main_3">#0b363c</color>
+    <color name="brand_secondary">#83a1a6</color>
+    <color name="brand_secondary_dark">#7B989C</color>
+    <color name="brand_secondary_1">#516366</color>
+    <color name="brand_secondary_1_opacity_50">#80516366</color>
+    <color name="brand_secondary_1_opacity_90">#E6516366</color>
+
+    <!-- GREY -->
+    <color name="white">#ffffff</color>
+    <color name="white_opacity_30">#3Cffffff</color>
+    <color name="white_opacity_50">#80ffffff</color>
+    <color name="white_opacity_70">#B4ffffff</color>
+    <color name="grey_light">#f6f6f6</color>
+    <color name="grey_light_1">#eeeeee</color>
+    <color name="grey_light_2">#e6e6e6</color>
+    <color name="grey">#cccccc</color>
+    <color name="grey_1">#bbbbbb</color>
+    <color name="grey_2">#999999</color>
+    <color name="grey_dark">#666666</color>
+    <color name="grey_dark_1">#444444</color>
+    <color name="grey_dark_2">#333333</color>
+    <color name="navigation">#222222</color>
+    <color name="grey_dark_2_opacity_25">#40333333</color>
+    <color name="black">#000000</color>
+    <color name="black_opacity_25">#40000000</color>
+    <color name="black_opacity_66">#99000000</color>
+
+    <!-- QUIET -->
+    <color name="quiet">#e1f4f7</color>
+    <color name="quiet_1">#c1e6eb</color>
+    <color name="quiet_2">#fff3f5</color>
+    <color name="quiet_3">#fee0e3</color>
+    <color name="quiet_4">#fffcea</color>
+
+    <!-- OTHER -->
+    <color name="positive_loud">#7ed321</color>
+    <color name="positive_quiet">#8dce83</color>
+    <color name="important">#e8a95c</color>
+    <color name="loud_light">#e45555</color> <!-- red light -->
+    <color name="loud">#cb4a4a</color>
+    <color name="loud_dark">#9f434e</color>
+    <color name="neutral">#d4cbaa</color>
+    <color name="chat_away">#e8a95c</color>
+
+    <!-- LEGACY? -->
+    <color name="red_dark">#AB1F24</color>
+    <color name="red_darkest">#921C20</color>
+    <color name="highlight_on_white">#EAF3F6</color>
+    <color name="highlight_on_blue">#2D8AB4</color>
+    <color name="highlight_on_dark_grey">#333333</color>
+    <color name="highlight_on_light_grey">#DDDDDD</color>
+    <color name="gray_separator">#dadada</color>
+
+
+    <!--Rout Info colors-->
+    <color name="rout_clr_dblue">#38486A</color>
+    <color name="rout_clr_blue">#1697D1</color>
+    <color name="rout_clr_red">#A6475D</color>
+    <color name="rout_clr_l_green">#A49834</color>
+
+
+  <!--  <color name="bd_header_bg">#38486A</color>
+    <color name="bd_body_bg">#38486A</color>-->
+    <color name="bd_options_button_bg">#CFAF63</color>
+    <color name="bd_options_button_click">#A6BCCF</color>
+   <!-- <color name="bd_body_text">#38486A</color>
+    <color name="bd_progress_bar">#38486A</color>-->
+
+    <color name="rating_color">#D56600</color>
+
+
+    <color name="balancecolor">#CDB14B</color>
+
+
+
+    <color name="cmrl_c1">#F6F6F6</color>
+    <color name="cmrl_c2">#5B98F4</color>
+    <color name="cmrl_c4">#FFFFFF</color>
+    <color name="cmrl_c6">#538BC9</color>
+</resources>

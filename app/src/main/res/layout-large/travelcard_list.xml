@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/t_card_bg">
+
+    <include
+        android:id="@+id/logout_menu"
+        layout="@layout/travelcard_menu_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout5"
+        android:layout_below="@+id/logout_menu">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/card_list_recy"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="invisible"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/no_cardtxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="There are no cards to display" />
+
+            <LinearLayout
+                android:id="@+id/layoutdisable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/showhide_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/instruc_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Instructions for Travel Card"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/instructionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="6dip">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/black"
+                            android:padding="6dip" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="15dp"
+                            android:lineSpacingExtra="5dp"
+                            android:text="Online recharge facility is only available for the Store Value Card and not applicable for Trip Card."
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="6dip">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/black"
+                            android:padding="6dip" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="15dp"
+                            android:lineSpacingExtra="5dp"
+                            android:text="After completion of Online Payment, Visit Ticket Vending Machine (TVM) installed at metro stations. Insert your Smart Card on TVM, Press ”Web top up” button on Screen of TVM to complete the recharge process."
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/add_t_card_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/circle_bg_btton_orange"
+                android:text="Add New Card"
+                android:textAllCaps="false"
+                android:textSize="22sp"
+                android:textColor="@color/color_white" />
+
+            <Button
+                android:id="@+id/quick_rc_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:textSize="22sp"
+                android:background="@drawable/circle_bg_btton_blue"
+                android:text="Quick Recharge"
+                android:textAllCaps="false"
+                android:textColor="@color/color_white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

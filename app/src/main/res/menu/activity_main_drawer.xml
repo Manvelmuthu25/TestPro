@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_travel_planner"
+            android:icon="@drawable/ic_route_info"
+            android:title="@string/travel_planner" />
+        <item
+            android:id="@+id/nav_sta_info"
+            android:icon="@drawable/ic_station_info"
+            android:title="@string/sta_info" />
+
+        <item
+            android:id="@+id/nav_Nfctestfile_NFC"
+            android:icon="@drawable/ticketslogin"
+            android:title="Login"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/nav_travel_NFC"
+            android:icon="@drawable/ic_rupee"
+            android:title="@string/traval_card_balance"
+            android:visible="true" />
+
+
+        <item
+            android:id="@+id/nav_traval_card"
+            android:icon="@drawable/ic_traval_card"
+            android:title="@string/traval_card" />
+
+
+        <item
+            android:id="@+id/nav_Singara_chennai_card"
+            android:icon="@drawable/chennai_white"
+            android:title="Singara Chennai Card" />
+
+
+
+        <item
+            android:id="@+id/nav_ticket_booking"
+            android:icon="@drawable/ticketsbooking"
+            android:title=" QR Ticket" />
+
+        <item
+            android:id="@+id/nav_promotional_ride"
+            android:icon="@drawable/freediscount"
+            app:actionLayout="@layout/nav_drawer_switch"
+            android:title="Promotional Ride" />
+
+
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="Share"/>
+                <item
+                    android:id="@+id/nav_send"
+                    android:title="Send"/>
+            </menu>
+        </item>
+        <!--        <item-->
+        <!--            android:id="@+id/nav_Autotopup"-->
+        <!--            android:icon="@drawable/ic_traval_card"-->
+        <!--            android:visible="true"-->
+        <!--            android:title="Auto TopUp" />-->
+
+        <!--  <item
+              android:id="@+id/nav_traval_cabs"
+              android:icon="@drawable/ic_traval_cabs"
+              android:title="@string/traval_cabs" />-->
+        <item
+            android:id="@+id/nav_traval_cabs"
+            android:icon="@drawable/ic_traval_cabs"
+            android:title="@string/feeder_service"
+            android:visible="false" />
+
+
+
+
+
+
+        <item
+            android:id="@+id/nav_sugarbox"
+            android:icon="@drawable/sugarboxmenu1"
+            android:title="@string/Sugarbox" />
+
+
+        <item
+            android:id="@+id/nav_alert_destination"
+            android:icon="@drawable/alert"
+            android:title="@string/setalertdestination"
+            android:visible="false" />
+        <!-- android:visible="false"-->
+
+        <item
+            android:id="@+id/nav_nearest_metro"
+            android:icon="@drawable/ic_near_metro"
+            android:title="@string/nearest_station" />
+
+        <item
+            android:id="@+id/nav_feeder_service"
+            android:icon="@drawable/ic_feeder_service"
+            android:title="@string/traval_cabs" />
+
+
+        <item
+            android:id="@+id/nav_tour_guid"
+            android:icon="@drawable/ic_tour_guide"
+            android:title="@string/tour_guide" />
+        <item
+            android:id="@+id/nav_other_info"
+            android:icon="@drawable/ic_others"
+            android:title="@string/others" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/feedback" />
+
+
+    </group>
+
+</menu>

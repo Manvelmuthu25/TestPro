@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#64000000"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.CardView
+
+        android:id="@+id/dialog1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="2dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/status_txt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryLight"
+                android:gravity="center"
+                android:text="Enter OTP"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+
+
+            <TextView
+                android:id="@+id/send_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:text="We have sent an OTP to \n******9156 Please enter it to continue"
+                android:textColor="#848484"
+                android:textSize="16sp" />
+
+
+            <com.alimuzaffar.lib.pin.PinEntryEditText
+                android:id="@+id/otp_txt_pin_entry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:cursorVisible="false"
+                android:digits="1234567890"
+                android:inputType="number"
+                android:maxLength="6"
+                app:pinLineColors="@color/colorPrimary"
+                android:textColor="#2B5B80"
+                android:textIsSelectable="false"
+                android:textSize="22sp"
+                app:pinCharacterMask="*" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight=".8"
+                    android:gravity="center|right"
+                    android:textColor="#848484"
+                    android:textSize="14sp"
+                    android:text="Problem Receiving? " />
+
+                <TextView
+                    android:id="@+id/resend_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Resend OTP"
+                    android:textSize="14sp"
+                    android:textColor="#4D75C3"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#848484"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:text="Does't get OTP within 2 mints please Click Resend OTP" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/otp_verify_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/circle_bg_btton_blue"
+                    android:text="Verify"
+                    android:textAllCaps="false"
+                    android:textColor="@color/color_white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/otp_cancel_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

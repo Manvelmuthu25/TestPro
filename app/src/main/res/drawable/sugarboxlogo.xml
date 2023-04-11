@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+
+    <path
+        android:fillColor="#2e3690"
+        android:pathData="M113,87l12.85-12.85-13-13A18.41,18.41,0,0,0,113,87Z" />
+    <path
+        android:fillColor="#2e3690"
+        android:pathData="M93.6,106.4l12.81-12.81a27.71,27.71,0,0,1-0.18-39L93.42,41.8A45.85,45.85,0,0,0,93.6,106.4Z" />
+    <path
+        android:fillColor="#2e3690"
+        android:pathData="M74,126l13-13a55.25,55.25,0,0,1-0.18-77.87l-13-13A73.62,73.62,0,0,0,74,126Z" />
+    <path
+        android:fillColor="#2baae2"
+        android:pathData="M138.66,61.34,125.81,74.19l-13-13A18.43,18.43,0,0,1,138.66,61.34Z" />
+    <path
+        android:fillColor="#2baae2"
+        android:pathData="M158,42,145.21,54.79a27.74,27.74,0,0,0-39-0.17L93.42,41.8A45.86,45.86,0,0,1,158,42Z" />
+    <path
+        android:fillColor="#2baae2"
+        android:pathData="M177.62,22.38l-13,13a55.26,55.26,0,0,0-77.88-0.17l-13-13A73.62,73.62,0,0,1,177.62,22.38Z" />
+    <path
+        android:fillColor="#ed2079"
+        android:pathData="M61.34,138.66l12.85-12.85,13,13A18.43,18.43,0,0,1,61.34,138.66Z" />
+    <path
+        android:fillColor="#ed2079"
+        android:pathData="M42,158l12.81-12.81a27.74,27.74,0,0,0,39,0.17l12.81,12.82A45.86,45.86,0,0,1,42,158Z" />
+    <path
+        android:fillColor="#ed2079"
+        android:pathData="M22.38,177.62l13-13a55.26,55.26,0,0,0,77.88 0.17 l13,13A73.62,73.62,0,0,1,22.38,177.62Z" />
+    <path
+        android:fillColor="#67308f"
+        android:pathData="M87,113.05,74,126l13.25,12.82A18.31,18.31,0,0,0,87,113.05Z" />
+    <path
+        android:fillColor="#67308f"
+        android:pathData="M106.41,93.59,93.6,106.4a27.74,27.74,0,0,1,0.17,39l12.81,12.81A45.86,45.86,0,0,0,106.41,93.59Z" />
+    <path
+        android:fillColor="#67308f"
+        android:pathData="M125.78,74.18,112.94,87a55.15,55.15,0,0,1,0.28,77.79l13,13A73.39,73.39,0,0,0,125.78,74.18Z" />
+</vector>

@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/back_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/dirc_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/car_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottomblue_line"
+                android:gravity="center"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/circle_blue"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/car_white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/train_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/circle_blue"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/train_ic_nears" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/walk_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/circle_blue"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:src="@drawable/walk_ic_near" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--    <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </fragment>-->
+
+    <FrameLayout
+        android:id="@+id/fr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linearLayout4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true">
+
+            </fragment>
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:animateLayoutChanges="true"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/show_hide_btn1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#56B7F9"
+                        android:gravity="center|left"
+                        android:paddingLeft="5dp"
+                        android:text="Directions"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/rout_start_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/show_hide_btn1"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toStartOf="@+id/redirect_addres"
+                        android:drawableLeft="@drawable/marker_green"
+                        android:lineSpacingExtra="5dp"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textSize="14sp" />
+
+
+                    <ImageView
+                        android:id="@+id/redirect_addres"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_alignBottom="@+id/rout_start_txt"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="35dp"
+                        android:src="@drawable/navigation_ic" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/dumy"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toEndOf="@+id/rout_start_txt"
+                        android:gravity="center"
+                        android:text="START"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/textView5"
+                        android:background="@drawable/near_bottom_light_blue_line">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dumy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rout_start_txt"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/distance_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/near_bottom_light_blue_line"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/show_hide_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/near_bottom_light_blue_line"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:text="Show Steps"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:id="@+id/dirc_discr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/root_recyview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/show_list"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentLeft="true"
+                            android:background="#fff" />
+
+                        <TextView
+                            android:id="@+id/rout_end_txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/near_bottom_light_blue_line"
+                            android:drawableLeft="@drawable/marker_red"
+                            android:lineSpacingExtra="5dp"
+                            android:padding="10dp"
+                            android:text=""
+                            android:textSize="14sp" />
+
+
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

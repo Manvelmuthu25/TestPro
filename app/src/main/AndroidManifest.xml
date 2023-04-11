@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.chennaimetrorail.appv1"
+    tools:targetApi="o">
+
+    <!-- Permission required to draw floating widget over other apps -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- BillDesk code start -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- from BillDesk SDK v1.3.37 -->
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION"
+        tools:node="remove" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:anyDensity="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:largeScreens="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:normalScreens="true"
+        android:requestLegacyExternalStorage="true"
+        android:resizeable="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:smallScreens="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/chennai" />
+
+        <activity
+            android:name=".SingarChennaiCard"
+            android:exported="true" /> <!-- <activity android:name=".travelcab.Booking" /> &lt;!&ndash; <activity android:name=".travelcab.ticket_Booking" /> &ndash;&gt; -->
+        <activity android:name=".Nfctestfile" />
+        <!--
+      os 10   android:requestLegacyExternalStorage="true"
+        OutOfMemoryError
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        -->
+        <!-- <supports-screens -->
+        <!-- android:anyDensity="true" -->
+        <!-- android:largeScreens="true" -->
+        <!-- android:normalScreens="true" -->
+        <!-- android:resizeable="true" -->
+        <!-- android:smallScreens="true"/> -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" /> <!-- map -->
+        <activity
+            android:name=".activity.SplashScreen"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Main activity -->
+        <activity
+            android:name=".activity.Home"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:ignore="LockedOrientationActivity" /> <!-- Set Alert Destination view Activity And Service -->
+        <activity
+            android:name=".activity.Travelcardbalance"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- Read Message form phone -->
+        <!-- Recharge Activity -->
+        <activity
+            android:name=".travelcard.QuickRechargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".travelcard.NormalRechargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".travelcard.ViewAllTransactionActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- BillDesk code start -->
+        <activity android:name="com.billdesk.sdk.PaymentOptions" />
+        <activity
+            android:name="com.billdesk.sdk.BankList"
+            android:theme="@style/Theme.BD_Dialog" />
+        <activity
+            android:name="com.billdesk.sdk.QuickPayView"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.billdesk.sdk.CreditCardView"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.billdesk.sdk.PaymentWebView"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.billdesk.utils.URLUtilActivity"
+            android:configChanges="keyboardHidden"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.billdesk.library.OtpDialogActivity"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name=".travelcard.StatusActivity" />
+        <activity
+            android:name="com.billdesk.sdk.UpiActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.billdesk.sdk.Emerald2Activity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name=".CmrlFirebaseInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".CmrlFirebaseMsgService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service> <!-- Floating VIew -->
+        <service
+            android:name=".FloatingWidgetService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".DirectionFloatingWidgetService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/color_transprant" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" /> <!-- API Version 9.0 google map working suport code -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

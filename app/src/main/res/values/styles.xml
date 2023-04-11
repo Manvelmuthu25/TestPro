@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="MyAppTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- you should set typeface which you want to override with TypefaceUtil -->
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">60sp</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">40dp</item><!-- item size in menu-->
+        <item name="listPreferredItemHeightSmall">40dp</item><!-- item size in menu-->
+    </style>
+    <style name="NavigationTheme" parent="AppTheme">
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginBottom">02dp</item>
+    </style>
+
+
+    <!-- Bill desk code start -->
+    -
+
+    <style name="Theme.BD_Dialog" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <!-- Bill desk code end -->
+    <!-- Bill desk code start -->
+    -
+
+    <!-- Base application theme, dependent on API level. This theme is replaced by AppBaseTheme from res/values-vXX/styles.xml on newer devices. -->
+    -<style parent="Theme.AppCompat.Light.NoActionBar" name="AppBaseTheme">
+    <item name="colorPrimary">#ffff9431</item>
+    <item name="colorPrimaryDark">#ffD56600</item>
+</style>
+    <!-- Theme customizations available in newer API levels can go in res/values-vXX/styles.xml, while customizations related to backward-compatibility can go here. -->
+  <style parent="ThemeOverlay.AppCompat.ActionBar" name="ActionBar"><item name="android:displayOptions">homeAsUp</item></style>
+
+
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="scustomRatingBar"
+        parent="android:style/Widget.Material.RatingBar.Small">
+        ... // Additional customizations
+    </style>
+
+    <style name="customRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/star_off</item>
+        <item name="android:indeterminateDrawable">@drawable/star_on</item>
+    </style>
+
+</resources>

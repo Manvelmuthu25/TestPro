@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/free_discount_ride_emt"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/loadUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textColor="#000"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/latitude1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="#000"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/longitude2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="#000"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/station_tit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text=""
+        android:textColor="#000"
+        android:gravity="start"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+
+
+
+
+
